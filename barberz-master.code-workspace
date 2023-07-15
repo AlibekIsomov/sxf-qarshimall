@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../test"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "barberz-master"
+	}
+}
