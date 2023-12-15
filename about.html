@@ -26,7 +26,7 @@
   </head>
 
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-
+    <script src="/js/snowfall.js"></script>
     
     <div class="site-wrap" id="home-section">
 
@@ -42,13 +42,13 @@
 
 
      <header class="site-navbar site-navbar-target" role="banner">
-
+      <div class="snow"></div>
 <div class="container">
   <div class="row align-items-center position-relative">
 
     <div class="col-3 ">
       <div class="site-logo">
-        <a href="index.html">QARSHIMALL</a>
+        <a href="index.html" class="santa-hat">QARSHIMALL</a>
       </div>
     </div>
 
@@ -62,9 +62,7 @@
       <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
         <ul class="site-menu main-menu js-clone-nav ml-auto ">
           <li><a href="index.html" class="nav-link">Asosiy</a></li>
-          <!-- <li><a href="barber-shop.html" class="nav-link">Barber Shop</a></li> -->
           <li class="active"><a href="about.html" class="nav-link">Biz haqimizda</a></li>
-          <!-- <li><a href="blog.html" class="nav-link">Blog</a></li> -->
           <li><a href="contact.html" class="nav-link">Bog'lanish</a></li>
         </ul>
       </nav>
@@ -83,7 +81,7 @@
     <div class="col-md-7">
       <h1 class="mb-3">Savdo markazi</h1>
       <p>O'zingizga yaxshi savdo qilish uchun yolg'iz manzil - QARSHIMALL savdo markazimiz</p>
-      <p><a href="#" class="btn btn-primary">Ko'proq ma'lumot</a></p>
+      <p><a href="#" class="btn btn-primary" onclick="scrollToMoreInfo()">Ko'proq ma'lumot</a></p>  
     </div>
   </div>
 </div>
@@ -95,7 +93,7 @@
           <div class="col-lg-6 mb-5 mb-lg-0">
             <div class="img-years">
               <img src="images/hero_4.jpg" alt="Image" class="img-fluid">
-              <div class="year">
+              <div id="more-info" class="year">
                 <span>Biz<span>uchun<br>mijozlarimiz muhimdir</span></span>
               </div>
             </div>
@@ -232,6 +230,19 @@
     <script src="js/main.js"></script>
 
   </body>
-
+  <script>
+    function scrollToMoreInfo() {
+        const moreInfoElement = document.getElementById('more-info');
+    
+        // Calculate the target position
+        const targetPosition = moreInfoElement.getBoundingClientRect().top + window.scrollY;
+    
+        // Perform smooth scroll
+        window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+        });
+    }
+      </script>
 </html>
 
