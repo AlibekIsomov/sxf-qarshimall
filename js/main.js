@@ -325,3 +325,27 @@ jQuery(document).ready(function($) {
 	
 
 });
+
+// Check if the URL ends with "index.html" and redirect to a cleaner URL
+
+if (window.location.href.endsWith("index.html")) {
+	var cleanUrl = window.location.href.replace(/\/index.html$/, '/');
+	history.replaceState({}, document.title, cleanUrl);
+}
+
+if (window.location.href.endsWith("about.html")) {
+	var cleanUrl = window.location.href.replace(/\/about.html$/, '/');
+	history.replaceState({}, document.title, cleanUrl);
+}
+
+if (window.location.href.endsWith("contact.html")) {
+	var cleanUrl = window.location.href.replace(/\/contact.html$/, '/');
+	history.replaceState({}, document.title, cleanUrl);
+}
+
+
+//tg-bot online chat
+window.replainSettings = { id: 'e0380c3a-4d98-4b2e-adb4-6c2f58fb0f24' };
+(function(u){var s=document.createElement('script');s.async=true;s.src=u;
+var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
+})('https://widget.replain.cc/dist/client.js');

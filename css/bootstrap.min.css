@@ -74,7 +74,11 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  font-size: 70%;
+  font-weight: bold;
+
+   }
 
 abbr[title],
 abbr[data-original-title] {
@@ -394,7 +398,8 @@ mark,
 
 .img-fluid {
   max-width: 100%;
-  height: auto; }
+  max-height: 21rem;
+}
 
 .img-thumbnail {
   padding: 0.25rem;
