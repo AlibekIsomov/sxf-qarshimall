@@ -349,3 +349,7 @@ window.replainSettings = { id: 'e0380c3a-4d98-4b2e-adb4-6c2f58fb0f24' };
 (function(u){var s=document.createElement('script');s.async=true;s.src=u;
 var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
 })('https://widget.replain.cc/dist/client.js');
+
+const tl = gsap.timeline({ defaults: { ease: "power2.out" } });
+
+window.location.href = "template/index.html";

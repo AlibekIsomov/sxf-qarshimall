@@ -24,7 +24,7 @@ html {
   font-size: 3.0em;
   letter-spacing: 10px;
   padding: 40px;
-  color: #7d97db;
+  color: #016702;
 }
 .gallery-image {
   margin-top: 1%;
@@ -97,6 +97,50 @@ html {
   opacity: 0.5;
 }
 
+#logo-container {
+  text-align: center;
+  padding: 20px;
+}
+
+#lazy-component {
+  text-align: center;
+}
+
+/* Intro */
+
+
+.landing {
+  background-color: #f3f3f3;
+  min-height: 100vh;
+}
+
+.big-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  font-family: "Heebo", sans-serif;
+  color: rgb(61, 61, 61);
+}
+
+/* TEXT ANIM */
+
+.landing {
+  background-color: #f3f3f3;
+  min-height: 100vh;
+}
+
+.big-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  font-family: "Heebo", sans-serif;
+  color: rgb(61, 61, 61);
+}
+
 /* start snowfall */
 .snow {
   position: fixed;
@@ -112,27 +156,24 @@ html {
   position: absolute;
   width: 20px; /* Adjust the size as needed */
   height: 20px; /* Adjust the size as needed */
-  background-image: url('snowflake.png'); /* Replace 'snowflake.png' with your image path */
-  background-size: cover;
+  background-image: url('snowflake.png'); /* Replace 'flower.png' with your flower image path */
+  background-size: contain;
   opacity: 0.8;
   animation: fall linear infinite;
 }
 
-@keyframes snowfall {
-  from {
-      transform: translateY(-100vh);
-  }
-  to {
-      transform: translateY(100vh);
-  }
-}
-
 @keyframes fall {
+  from {
+    transform: translateY(-10vh) translateX(-50%);
+    opacity: 1; /* Start with opacity 0 to fade in */
+  }
   to {
-      transform: translateY(100vh);
+    transform: translateY(110vh) translateX(calc(10% + random(-205vw, 205vw)));
+    opacity: 0.1; /* End with opacity 1 */
   }
 }
 /* end snowfall */
+
 
 .site-logo {
   position: relative;
@@ -148,10 +189,10 @@ html {
 .santa-hat::before {
   content: '';
   position: absolute;
-  top: -0.1em; /* Adjust the top position to properly align the hat */
-  left: -0.23em; /* Adjust the left position to properly align the hat */
-  width: 1.4em; /* Adjust the width of the hat */
-  height: 0.8em; /* Adjust the height of the hat */
+  top: -0.45em; /* Adjust the top position to properly align the hat */
+  left: -0.20em; /* Adjust the left position to properly align the hat */
+  width: 1.2em; /* Adjust the width of the hat */
+  height: 1.6em; /* Adjust the height of the hat */
   background-image: url('santas_hat.png'); /* Replace with the path to your Santa's hat image */
   background-size: contain;
   background-repeat: no-repeat;
@@ -636,7 +677,7 @@ h1, h2, h3, h4, h5,
     padding: 0;
     margin-bottom: 0; }
     .site-navbar .site-navigation .site-menu .active {
-      color: #7d97db !important; }
+      color: #21da05 !important; }
     .site-navbar .site-navigation .site-menu a {
       text-decoration: none !important;
       display: inline-block; }
@@ -650,9 +691,9 @@ h1, h2, h3, h4, h5,
         display: inline-block;
         text-decoration: none !important; }
         .site-navbar .site-navigation .site-menu > li > a:hover {
-          color: #7d97db; }
+          color: #21da05; }
       .site-navbar .site-navigation .site-menu > li.active > a {
-        color: #7d97db !important; }
+        color: #21da05 !important; }
     .site-navbar .site-navigation .site-menu .has-children {
       position: relative; }
       .site-navbar .site-navigation .site-menu .has-children > a {
@@ -1573,7 +1614,7 @@ h1, h2, h3, h4, h5,
           text-align: right; }
     .item-1 .item-1-contents h3 {
       position: relative;
-      color: #7d97db;
+      color: #016702;
       padding-bottom: 30px;
       margin-bottom: 30px; }
       .item-1 .item-1-contents h3:after {
@@ -1582,7 +1623,7 @@ h1, h2, h3, h4, h5,
         content: "";
         width: 40px;
         height: 2px;
-        background: #7d97db;
+        background: #016702;
         position: absolute; }
 
 .how-it-works .step {
@@ -1626,13 +1667,13 @@ h1, h2, h3, h4, h5,
 .service-1 {
   text-align: center; }
   .service-1 .service-1-icon {
-    background: #7d97db;
+    background: #016702;
     width: 90px;
     height: 90px;
     margin-bottom: 20px;
     position: relative;
     display: inline-block;
-    border: 4px solid #7d97db;
+    border: 4px solid #016702;
     border-radius: 50%;
     color: #fff; }
     .service-1 .service-1-icon > i {
@@ -1690,7 +1731,7 @@ h1, h2, h3, h4, h5,
   padding-bottom: 30px;
   margin-bottom: 30px;
   font-size: 3rem;
-  color: #7d97db; }
+  color:#016702; }
   @media (max-width: 991.98px) {
     .scissors {
       font-size: 2rem; } }
@@ -1703,7 +1744,7 @@ h1, h2, h3, h4, h5,
     position: absolute;
     color: #ccc; } */
   .scissors.primary-color-icon:after {
-    color: #7d97db; }
+    color: #016702; }
   .scissors.text-center:after {
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -1744,7 +1785,7 @@ h1, h2, h3, h4, h5,
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background: #dc3545;
+    background: #016702;
     position: absolute;
     right: 0;
     bottom: 0;
